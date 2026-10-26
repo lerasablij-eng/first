@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вертикальні рядки, що біжать</title>
+    <style>
+        body {
+            background-color: #f5f5ff;
+            font-family: Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .strip {
+            width: 180px;
+            height: 300px;
+            overflow: hidden;
+            border: 1px solid #777;
+        }
+
+        marquee {
+            width: 180px;
+            height: 300px;
+        }
+
+        .strip p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .strip img {
+            width: 90px;
+            height: 70px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Вертикальні рядки, що біжать</h1>
+
+    <div class="container">
+
+        <div class="strip" style="background-color: #ffb6c1;">
+            <marquee direction="up" behavior="alternate" scrollamount="4">
+                <p>Знання — це сила!</p>
+                <img src="https://picsum.photos/90/70?random=1" alt="Зображення 1">
+            </marquee>
+        </div>
+
+        <div class="strip" style="background-color: #b0e0e6;">
+            <marquee direction="up" behavior="scroll" scrollamount="3">
+                <img src="https://picsum.photos/90/70?random=2" alt="Зображення 2">
+                <img src="https://picsum.photos/90/70?random=3" alt="Зображення 3">
+                <img src="https://picsum.photos/90/70?random=4" alt="Зображення 4">
+            </marquee>
+        </div>
+
+        <div class="strip" style="background-color: #98fb98;">
+            <marquee direction="down" behavior="slide" scrollamount="3">
+                <p>Рухайся до мети!</p>
+                <img src="https://picsum.photos/90/70?random=5" alt="Зображення 5">
+                <img src="https://picsum.photos/90/70?random=6" alt="Зображення 6">
+            </marquee>
+        </div>
+
+        <div class="strip" style="background-color: #ffe4b5;">
+            <marquee direction="up" behavior="scroll"
+                scrolldelay="40" scrollamount="5">
+                <p>Читай і відкривай нове!</p>
+                <img src="https://picsum.photos/90/70?random=7" alt="Зображення 7">
+            </marquee>
+        </div>
+
+        <div class="strip" style="background-color: #d8bfd8;">
+            <marquee direction="down" behavior="scroll"
+                scrolldelay="150" scrollamount="5">
+                <p>Кожен день — нові знання!</p>
+                <img src="https://picsum.photos/90/70?random=8" alt="Зображення 8">
+            </marquee>
+        </div>
+
+    </div>
+
+</body>
+</html>
